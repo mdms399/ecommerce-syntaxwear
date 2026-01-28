@@ -75,3 +75,31 @@
     display: flex;
     gap: 10px;
 }
+
+@media(max-width:768px) {
+    .grid-section {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(5, auto);
+      grid-template-areas: 
+      "produto1 produto1"
+      "produto5 produto5"
+      "produto3 produto4"
+      "produto3 produto6"
+      "produto2 produto2";
+      max-width: 100%;
+      gap: 0.625rem;
+    }
+
+    .produto1 {
+      min-height: 500px;
+    }
+
+    .produto2, .produto5 {
+      min-height: 190px;
+    }
+
+    .produto3 {
+      min-height: 370px;
+    }
+
+}

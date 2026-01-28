@@ -50,9 +50,3 @@
     background: url(../../images/products/futurista.jpg) no-repeat center;
     background-size: cover;
 }
-
-@media(max-width:350px) {
-    .category-card {
-        width: 100%;
-    }
-}
